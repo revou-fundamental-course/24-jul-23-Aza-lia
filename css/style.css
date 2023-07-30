@@ -1,12 +1,91 @@
+body {
+  background-image:
+  linear-gradient(90deg,
+    rgba(150, 121, 105,0.95),
+    rgba(150, 121, 105, 0.50),
+    rgba(0,0,0,0.1)),
+    url('../picture/Background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  color: #fff;
+  font-family: 'Lucida Grande';
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  background-color: rgba(0,0,0,0.3);
+}
+.container > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+.logo {
+  margin-left: 15px;
+  align-self: center;
+  margin-right: auto;
+  width: 8%;
+  height: 10%;
+}
+article,main {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+h1 {
+  text-align: center;
+}
+header {
+  margin-bottom: 20px;
+}
+section {
+  margin-top: 50px;
+  background-color: rgba(0,0,0,0.3);
+}
+footer {
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  min-height: 40px;
+  max-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 main {
   flex-direction: row;
   display: flex;
-  min-height: 418px;
+  min-height: fit-content;
+  align-content: start;
 }
 main > div {
   display: flex;
-  align-self: start;
-  gap: 30px;
+  align-content: start;
+  margin-right: 15px;
+  padding-right: 15px;
+}
+#second_main{
+  flex-wrap: wrap;
+}
+#second_main > div {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+}
+h4 {
+  height: fit-content;
+  margin: 0px;
+}
+h6 {
+  margin-top: 5px;
+}
+#closing {
+  text-align: center;
 }
 * {
   box-sizing: border-box;
