@@ -61,10 +61,6 @@ main > div {
   align-content: start;
 }
 
-#closing {
-  text-align: center;
-}
-
 
 * {
   box-sizing: border-box;
@@ -136,6 +132,7 @@ main > div {
 
 .contact_us {
   box-sizing: border-box;
+  border-radius: 5%;
   background-color: rgba(0,0,0,0.1);
   padding-right: 20px;
   padding-left: 20px;
@@ -145,15 +142,7 @@ main > div {
 input, select {
     min-width: 100%;
 }
-/* table   {
-    width: 800px;
-}
-table,th,td {
-    border: 1px solid white;
-    border-collapse: collapse;
-    align-self: center;
-    text-align: center;
-} */
+
 label{
     vertical-align: top;
 }
@@ -171,6 +160,10 @@ label{
 }
 [class*="col-"] {
   flex: 1 1 100%;
+}
+#closing {
+  text-align: center;
+  padding-right: 0px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -194,6 +187,10 @@ label{
     margin-top: 5px;
     padding-right: 110px;
   }
+  #closing {
+    text-align: center;
+    padding-right: 0px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -216,4 +213,9 @@ label{
   h6 {
     margin-top: 5px;
     padding-right: 250px;
+  }
+  #closing {
+    text-align: center;
+    padding-right: 0px;
+  }
 }

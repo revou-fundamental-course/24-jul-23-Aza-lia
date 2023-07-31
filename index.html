@@ -33,7 +33,7 @@
                     <div class="text">Caption Two</div>
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
+                     <div class="numbertext">3 / 3</div>
                     <img src="./assets/Logo.png" style="width:100%">
                     <div class="text">Caption Three</div>
                 </div>        
@@ -67,21 +67,22 @@
         <div class="contact_us col-s-2 col-2">
             <div>
                 <h3 id="contact_us">Contact Us</h3>
+                <p>Hi, <span id="name"></span></p>
                 <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
-                <form>
+                <form name="message-form" action="" onsubmit="return validateForm()">
                     <div>
                         <label for="Nama">Your Name:</label>
-                        <input id="Nama" type="text" placeholder="First and last name" />
+                        <input id="Nama" name="full-name" type="text" placeholder="First and last name" />
                     </div>
                     <br>
                     <div>
                         <label for="EA">Email Address:</label>
-                        <input id="EA" type="email" placeholder="example@email.com" />
+                        <input id="EA" type="email" placeholder="example@email.com" name="email-address" />
                     </div>
                     <br>
                     <div>
-                        <label for="Int">What Are You Interested In:</label>
-                        <select name="Int" id="Int">
+                        <label for="int">What Are You Interested In:</label>
+                        <select name="int" id="int">
                             <option value="vintage/rustic area">vintage/rustic area</option>
                             <option value="historical tour">historical tour</option>
                             <option value="food tour">food tour</option>
@@ -90,6 +91,22 @@
                     <br>
                     <input type="submit" value="Send" style="min-width: 100%;" />
                 </form>
+                <script>
+                    var pname = prompt("Siapakah nama anda?");
+                    document.getElementById("name").innerText = pname;
+                    function validateForm() {
+                        var fullname = document.forms["message-form"]["full-name"].value;
+                        var email = document.forms["message-form"]["email-address"].value;
+                        var interest = document.forms["message-form"]["int"].value;
+
+                        if (fullname == "" || email == "" || interest == "") {
+                            alert("input tidak boleh kosong");
+                            return false;    
+                        }
+
+                        return false;
+                    }
+                </script>
             </div>
         </div>
         <div class="col-s-3 col-3">
@@ -115,23 +132,23 @@
         </div>
         <div class="col-s-5 col-5">
             <h4>Japan</h4>
-            <h6>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</h6>
+            <h6>Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik.</h6>
         </div>
         <div class="col-s-6 col-6">
             <h4>Singapore</h4>
-            <h6>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</h6>
+            <h6>Travel dan wisata di Singapore. Kunjungi cagar budaya dan kuliner yang menarik.</h6>
         </div>
         <div class="col-s-7 col-7">
             <h4>Bandung</h4>
-            <h6>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</h6>
+            <h6>Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik.</h6>
         </div>
         <div class="col-s-8 col-8">
             <h4>Surabaya</h4>
-            <h6>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</h6>
+            <h6>Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik.</h6>
         </div>
         <div class="col-s-9 col-9">
             <h4>Third Feature</h4>
-            <h6>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</h6>
+            <h6>Travel dan wisata di Third Feature. Kunjungi cagar budaya dan kuliner yang menarik.</h6>
         </div>
     </main>
     <span><hr></span>
