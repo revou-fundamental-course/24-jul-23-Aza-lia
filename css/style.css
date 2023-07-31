@@ -4,7 +4,7 @@ body {
     rgba(150, 121, 105,0.95),
     rgba(150, 121, 105, 0.50),
     rgba(0,0,0,0.1)),
-    url('../picture/Background.jpg');
+    url('../assets/Background.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position-x: center;
@@ -26,13 +26,6 @@ body {
   text-align: center;
   font-size: 15px;
   color: white;
-}
-.logo {
-  margin-left: 15px;
-  align-self: center;
-  margin-right: auto;
-  width: 8%;
-  height: 10%;
 }
 article,main {
   margin-left: 50px;
@@ -67,16 +60,9 @@ main {
 main > div {
   /* display: flex; */
   align-content: start;
-  margin-right: 15px;
-  padding-right: 15px;
 }
 #second_main{
   flex-wrap: wrap;
-}
-#second_main > div {
-  /* flex: 1 1 30%; */
-  display: flex;
-  flex-direction: column;
 }
 h4 {
   height: fit-content;
@@ -88,6 +74,8 @@ h6 {
 #closing {
   text-align: center;
 }
+
+
 * {
   box-sizing: border-box;
 }
@@ -96,11 +84,6 @@ h6 {
 }
 .img_slides {
   vertical-align: middle;
-}
-.automatic-slideshow {
-  display: flex;
-  flex-direction: column;
-  margin-right: 50px;
 }
 
 /* Slideshow container */
@@ -189,19 +172,29 @@ label{
 /* Media Queries */
 
 /* For mobile phones: */
+.logo {
+  margin-left: 15px;
+  align-self: center;
+  margin-right: auto;
+  width: 20%;
+  height: 20%;
+}
 [class*="col-"] {
   flex: 1 1 100%;
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  .col-1 {flex: 4 4 70%;}
+  .logo {
+    margin-left: 15px;
+    align-self: center;
+    margin-right: auto;
+    width: 8%;
+    height: 10%;
+  }
+  .col-1 {flex: 4 4 80%; padding-right: 30px;}
   .col-2 {flex: 1 1 20%;}
-  .col-3 {flex: 0.5;}
-  .col-4 {flex: 33.33%;}
-  .col-5 {flex: 33.33%;}
-  .col-6 {flex: 33.33%;}
-  .col-7 {flex: 33.33%;}
-  .col-8 {flex: 33.33%;}
-  .col-9 {flex: 33.33%;}
+  .col-3 {flex: 0.4;}
+  .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 {flex: 33.33%; padding-right: 250px;}
+  /* .col-4, .col-5,.col-7, .col-8 {} */
 }
