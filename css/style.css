@@ -58,19 +58,9 @@ main {
   align-content: start;
 }
 main > div {
-  /* display: flex; */
   align-content: start;
 }
-#second_main{
-  flex-wrap: wrap;
-}
-h4 {
-  height: fit-content;
-  margin: 0px;
-}
-h6 {
-  margin-top: 5px;
-}
+
 #closing {
   text-align: center;
 }
@@ -183,6 +173,29 @@ label{
   flex: 1 1 100%;
 }
 
+@media only screen and (min-width: 600px) {
+  /* For desktop: */
+  .logo {
+    margin-left: 15px;
+    align-self: center;
+    margin-right: auto;
+    width: 8%;
+    height: 10%;
+  }
+  .col-s-1 {flex: 4 4 100%; padding-right: 30px;}
+  .col-s-2 {flex: 1 1 100%;}
+  .col-s-3 {flex: 100%;}
+  .col-s-4, .col-s-5, .col-s-6, .col-s-7, .col-s-8, .col-s-9 {justify-self: flex-start; flex: 0.5 0.5 50%;}
+  h4 {
+    height: fit-content;
+    margin: 0px;
+  }
+  h6 {
+    margin-top: 5px;
+    padding-right: 110px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .logo {
@@ -195,6 +208,12 @@ label{
   .col-1 {flex: 4 4 80%; padding-right: 30px;}
   .col-2 {flex: 1 1 20%;}
   .col-3 {flex: 0.4;}
-  .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 {flex: 33.33%; padding-right: 250px;}
-  /* .col-4, .col-5,.col-7, .col-8 {} */
+  .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 {flex: 33.33%;}
+  h4 {
+    height: fit-content;
+    margin: 0px;
+  }
+  h6 {
+    margin-top: 5px;
+    padding-right: 250px;
 }
